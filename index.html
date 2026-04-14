@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="Logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith Akinyi — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">FA.</a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="mailto:akinyifaith222@gmail.com" class="nav-cta">hire me</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" style="max-width:100%; padding-left:4rem; padding-right:4rem;">
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+
+  <p class="hero-label">available for work</p>
+
+  <h1>
+    Full-Stack<br>
+    <span class="accent">Developer</span><br>
+    <span class="dim">&amp; Builder</span>
+  </h1>
+
+  <p class="hero-desc">
+    I build things for the web — from scalable APIs to polished interfaces. Fresh graduate, shipping real projects. Based wherever the code is good.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#projects" class="btn-primary">View projects</a>
+    <a href="#contact" class="btn-ghost">Get in touch</a>
+  </div>
+
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">8+</div>
+      <div class="stat-label">Projects shipped</div>
+    </div>
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">Years coding</div>
+    </div>
+    <div>
+      <div class="stat-num">15+</div>
+      <div class="stat-label">Technologies</div>
+    </div>
+  </div>
+
+  <!-- Floating code card -->
+  <div class="hero-float">
+    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;">
+      <div style="width:10px;height:10px;border-radius:50%;background:#ff5f57;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#febc2e;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#28c840;"></div>
+      <span style="margin-left:0.5rem;color:#444;font-size:0.65rem;">server.ts</span>
+    </div>
+    <div><span style="color:#8b97ff">import</span> <span style="color:#c8f135">{ createServer }</span> <span style="color:#8b97ff">from</span> <span style="color:#ff8a70">'node:http'</span></div>
+    <div><span style="color:#8b97ff">import</span> app <span style="color:#8b97ff">from</span> <span style="color:#ff8a70">'./app'</span></div>
+    <div>&nbsp;</div>
+    <div><span style="color:#8b97ff">const</span> <span style="color:#c8f135">PORT</span> = process.env.PORT ?? <span style="color:#ff8a70">3000</span></div>
+    <div>&nbsp;</div>
+    <div><span style="color:#c8f135">createServer</span>(app).listen(PORT, () => {</div>
+    <div>&nbsp;&nbsp;console.<span style="color:#c8f135">log</span>(<span style="color:#ff8a70">`Listening on :${PORT}`</span>)</div>
+    <div>})</div>
+    <div class="hf-bar"><div class="hf-progress" style="width:75%"></div></div>
+    <div style="display:flex;justify-content:space-between;">
+      <span><span class="hf-dot green"></span>CSS3</span>
+      <span><span class="hf-dot blue"></span>Node.js</span>
+      <span><span class="hf-dot orange"></span>REST API</span>
+    </div>
+  </div>
+</div>
+
+<hr class="full-divider">
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-tag reveal">who I am</p>
+  <h2 class="reveal">Building at the intersection<br>of <span style="color:var(--accent)">logic</span> and design</h2>
+
+  <div class="about-inner">
+    <div class="about-text">
+      <p class="reveal">
+        I'm <strong>Faith Akinyi</strong>, a self-taught full-stack developer who graduated with a Maths and CS degree and immediately dove into building. No internships, no corporate experience — just <strong>real projects</strong>, late nights, and a stubborn habit of actually finishing things.
+      </p>
+      <p class="reveal">
+        I love the full product loop: designing the data model, building the API, wiring up the UI, deploying the whole thing. I'm comfortable jumping between <strong>React and Node</strong>, debugging a PostgreSQL query at 2am, and caring about whether the button radius is right.
+      </p>
+      <p class="reveal">
+        Currently looking for a first role where I can go deep, move fast, and keep building things that actually ship.
+      </p>
+    </div>
+
+    <div class="stack-grid reveal">
+      <div>
+        <div class="stack-category">frontend</div>
+        <div class="stack-tags">
+          <span class="tag">React</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Tailwind</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div>
+        <div class="stack-category">backend</div>
+        <div class="stack-tags">
+          <span class="tag blue">Node.js</span>
+          <span class="tag blue">Express</span>
+          <span class="tag blue">PostgreSQL</span>
+          <span class="tag blue">Django</span>
+          <span class="tag blue">Redis</span>
+        </div>
+      </div>
+      <div>
+        <div class="stack-category">tooling &amp; infra</div>
+        <div class="stack-tags">
+          <span class="tag orange">Docker</span>
+          <span class="tag orange">GitHub Actions</span>
+          <span class="tag orange">Vercel</span>
+          <span class="tag orange">AWS S3</span>
+          <span class="tag orange">Linux</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="full-divider">
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects" style="max-width:1200px;margin:0 auto;">
+
+  <p class="section-tag reveal">what I've built</p>
+  <h2 class="reveal">Projects</h2>
+  <p class="section-sub reveal">Side projects, experiments, and things I built to scratch my own itch.</p>
+
+  <!-- Featured project 1 -->
+  <div class="featured-project reveal">
+    <div class="fp-visual">
+      <div class="mockup">
+        <div class="line-muted">// booking-site/api</div>
+        <br>
+        <div><span class="line-green">POST</span> <span class="line-blue">/api/homes</span></div>
+        <div class="line-muted">▶ 201 Created · 42ms</div>
+        <br>
+        <div><span class="line-green">POST</span> <span class="line-blue">/api/bookings/</span></div>
+        <div>{</div>
+        <div>&nbsp;&nbsp;<span class="line-orange">"checkInDate"</span>: <span class="line-green">checkIn</span>,</div>
+        <div>&nbsp;&nbsp;<span class="line-orange">"checkOutDate"</span>: <span class="line-green">checkOut</span>,</div>
+        <div>&nbsp;&nbsp;<span class="line-orange">"totalPrice"</span>: [...]</div>
+        <div>}</div>
+        <br>
+        <div class="line-muted"></div>
+      </div>
+    </div>
+    <div class="fp-content">
+      <div class="fp-number">01 / featured</div>
+      <h3 class="fp-title">Flatio — Home Rental Booking Web Application</h3>
+      <p class="fp-desc">A full-stack home rental platform built with the MERN stack (MongoDB, Express.js, React, Node.js), featuring listing browsing, property detail views, and booking management. Includes RESTful APIs, user authentication, and responsive UI components, deployed on AWS with CI/CD pipelines via GitHub Actions for automated testing and seamless production updates.</p>
+      <div class="fp-tags">
+        <span class="tag">React</span>
+        <span class="tag blue">PostgreSQL</span>
+        <span class="tag blue">Node.js</span>
+        <span class="tag orange">Docker</span>
+        <span class="tag">AWS</span>
+      </div>
+      <div class="fp-links">
+        <a href="https://github.com/faith-53/Home-Rental-Site" class="fp-link">GitHub <span class="arrow">↗</span></a>
+        <a href="https://d26d61444z7tty.cloudfront.net/" class="fp-link">Live demo <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured project 2 -->
+  <div class="featured-project reveal" style="grid-template-columns: 1fr 1fr;">
+    <div class="fp-content" style="order:1;">
+      <div class="fp-number">02 / featured</div>
+      <h3 class="fp-title">Twice Blessed — E-commerce Application</h3>
+      <p class="fp-desc">Twice Blessed is a full-stack e-commerce application designed to provide a seamless shopping experience. The project is organized into three main parts: admin, client, and server, each serving a distinct purpose in the overall architecture.</p>
+      <div class="fp-tags">
+        <span class="tag">React</span>
+        <span class="tag blue">Tailwind</span>
+        <span class="tag blue">Express.js</span>
+        <span class="tag blue">Node.js</span>
+        <span class="tag orange">Netlify</span>
+      </div>
+      <div class="fp-links">
+        <a href="https://github.com/faith-53/Blessed" class="fp-link">GitHub <span class="arrow">↗</span></a>
+        <a href="https://inquisitive-taffy-c78793.netlify.app/" class="fp-link">Live demo <span class="arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="fp-visual" style="order:2;border-right:none;border-left:1px solid var(--border);">
+      <div class="mockup">
+        <div class="line-muted">// Handle review edit</div>
+        <br>
+        <div><span class="line-blue">const handleEdit</span>=<span class="line-green">(r)</span>(<span class="line-orange">=></span>{</div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setEditMode</span>(true)<span class="line-green">;</span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setEditReviewId</span>(r._id)<span class="line-green">;</span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setRating</span>(r.rating)<span class="line-green">;</span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setReview</span>(r.review)<span class="line-green">;</span></div>
+        <div>};</div>
+        <br>
+        <div class="line-muted">// 3 users connected · room #a7f2</div>
+        <br>
+        <div><span class="line-green">●</span> alice &nbsp;<span class="line-green">●</span> bob &nbsp;<span class="line-orange">●</span> you</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3-card grid -->
+  <div class="project-grid reveal" style="margin-top:1.5rem;">
+
+    <div class="project-card">
+      <div class="pc-icon green">⚡</div>
+      <div class="pc-title">TechSolutions</div>
+      <p class="pc-desc">A modern, responsive landing page for TechSolutions, a company specializing in innovative technology solutions for businesses.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">HTML5 · CSS3 · JavaScript</div>
+        <a href="https://techsolutions-gamma.vercel.app" class="pc-link">↗</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="pc-icon blue">🔍</div>
+      <div class="pc-title">E-commerce Scraper</div>
+      <p class="pc-desc">A Python-based e-commerce scraper that extracts product data such as prices, descriptions, and availability from online stores using libraries like BeautifulSoup and Requests.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">Python · BeautifulSoup</div>
+        <a href="#" class="pc-link">↗</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="pc-icon orange">🧾</div>
+      <div class="pc-title">Invoice Generator</div>
+      <p class="pc-desc">InvoicePro is a modern, full-stack invoice management system built with React and Node.js. It provides a seamless experience for creating, managing, and tracking invoices with a beautiful, responsive UI and dark mode support.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">React · Express · PostgreSQL</div>
+        <a href="https://github.com/faith-53/Invoice-Generator" class="pc-link">↗</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="pc-icon green">🎬</div>
+      <div class="pc-title">OnlineVideoBot</div>
+      <p class="pc-desc">A lightweight bot that fetches online videos from YouTube, Vimeo, Instagram, and 1000+ other sites, saving them locally as **MP4** files. Ready to watch or archive.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">Python · yt-dlp </div>
+        <a href="https://github.com/faith-53/Videos-Dowloader" class="pc-link">↗</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="pc-icon blue">🖥</div>
+      <div class="pc-title">Code Snippet Library</div>
+      <p class="pc-desc">A searchable website that enables developers to quickly find and reuse code snippets for common programming problems, featuring an intuitive UI built with React and keyword-based search functionality.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">React · Tailwind · Node.js</div>
+        <a href="https://d9pnj2i5lcyyx.cloudfront.net" class="pc-link">↗</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="pc-icon orange">📝</div>
+      <div class="pc-title">Text Editor</div>
+      <p class="pc-desc">StackPad is a modern text editor that combines simplicity with powerful features. It offers a tabbed interface, file explorer sidebar, syntax highlighting support, and session management - all in a lightweight package that runs smoothly on any system.</p>
+      <div class="pc-footer">
+        <div class="pc-stack">Python · tkinter · JSON</div>
+        <a href="https://github.com/faith-53/StackPad" class="pc-link">↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="full-divider">
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div>
+      <p class="section-tag reveal">say hello</p>
+      <h2 class="contact-headline reveal">Let's build something<br><span class="accent">together.</span></h2>
+      <p class="contact-sub reveal">
+        I'm open to full-time roles, contract work, and interesting side projects. Response time: usually within 24h.
+      </p>
+      <a href="mailto:akinyifaith222@gmail.com" class="btn-primary reveal" style="display:inline-block;">Send an email</a>
+    </div>
+
+    <div class="contact-links reveal">
+      <a href="mailto:akinyifaith222@gmail.com" class="contact-link">
+        <div class="cl-icon">✉️</div>
+        <div>
+          <div class="cl-label">Email</div>
+          <div class="cl-value">akinyifaith222@gmail.com</div>
+        </div>
+        <span class="cl-arrow">→</span>
+      </a>
+      <a href="https://github.com/faith-53" class="contact-link">
+        <div class="cl-icon">⌨️</div>
+        <div>
+          <div class="cl-label">GitHub</div>
+          <div class="cl-value">https://github.com/faith-53</div>
+        </div>
+        <span class="cl-arrow">→</span>
+      </a>
+      <a href="https://www.linkedin.com/in/faith-akinyi-5ab818350/" class="contact-link">
+        <div class="cl-icon">💼</div>
+        <div>
+          <div class="cl-label">LinkedIn</div>
+          <div class="cl-value">https://www.linkedin.com/in/faith-akinyi-5ab818350/</div>
+        </div>
+        <span class="cl-arrow">→</span>
+      </a>
+      <a href="#" class="contact-link">
+        <div class="cl-icon">📄</div>
+        <div>
+          <div class="cl-label">Resume</div>
+          <div class="cl-value">Download PDF</div>
+        </div>
+        <span class="cl-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">© 2025 Faith Akinyi · Built with <span>♥</span> and too much coffee</div>
+  <div class="footer-text" style="font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--muted)">
+    Open to work · Based in Nairobi
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
