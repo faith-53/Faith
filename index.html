@@ -172,10 +172,13 @@
     <div class="fp-content">
       <div class="fp-number">01 / featured</div>
       <h3 class="fp-title">Flatio — Home Rental Booking Web Application</h3>
-      <p class="fp-desc">A full-stack home rental platform built with the MERN stack (MongoDB, Express.js, React, Node.js), featuring listing browsing, property detail views, and booking management. Includes RESTful APIs, user authentication, and responsive UI components, deployed on AWS with CI/CD pipelines via GitHub Actions for automated testing and seamless production updates.</p>
+      <p class="fp-desc">The problem: Finding and booking rental homes online in most markets means juggling WhatsApp messages, PDF listings, and manual payment confirmations. I wanted to build the end-to-end experience properly.
+What I built: Flatio is a full-stack home rental platform where landlords can list properties and tenants can browse, view details, and book — all in one place. I handled the full product loop: data modelling, REST API design, React frontend, authentication, and production deployment on AWS with automated CI/CD via GitHub Actions.
+Key technical decisions: I chose Node.js + Express for the API layer for its speed and flexibility, and structured the booking logic to handle date conflict detection server-side to prevent double bookings. Deployment runs on AWS with a CloudFront CDN for fast asset delivery.
+What I learned: Designing a booking system taught me to think carefully about race conditions and data integrity — two reservations hitting the same dates at the same time is a real problem that needs to be solved at the database level, not just the UI.</p>
       <div class="fp-tags">
         <span class="tag">React</span>
-        <span class="tag blue">PostgreSQL</span>
+        <span class="tag blue">MongoDB</span>
         <span class="tag blue">Node.js</span>
         <span class="tag orange">Docker</span>
         <span class="tag">AWS</span>
