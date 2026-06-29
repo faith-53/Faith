@@ -508,6 +508,120 @@
 
   .pc-link:hover { color: var(--accent); }
 
+  /* EDUCATION */
+  .education-card {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 2rem;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: border-color 0.3s;
+  }
+ 
+  .education-card:hover { border-color: var(--border2); }
+ 
+  .edu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.25rem;
+  }
+ 
+  .edu-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(200,241,53,0.08);
+    border: 1px solid rgba(200,241,53,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+
+  .edu-body { display: flex; flex-direction: column; gap: 0.6rem; }
+ 
+  .edu-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+ 
+  .edu-period {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+ 
+  .edu-badge {
+    background: rgba(200,241,53,0.1);
+    border: 1px solid rgba(200,241,53,0.2);
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+  }
+
+  .edu-degree {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    color: var(--text);
+  }
+ 
+  .edu-school {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+ 
+  .edu-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 0.4rem;
+    max-width: 680px;
+  }
+ 
+  .edu-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    margin-top: 0.75rem;
+  }
+
+  .edu-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 300;
+  }
+ 
+  .edu-hl-icon {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+ 
+
   /* CONTACT */
   .contact-section {
     max-width: 1200px;
@@ -732,6 +846,14 @@
     .project-grid {
       grid-template-columns: 1fr;
     }
+
+    .education-card {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      padding: 1.5rem;
+    }
+    .edu-left { flex-direction: row; align-items: flex-start; }
+    .edu-highlights { grid-template-columns: 1fr; }
 
     .contact-section { padding: 3.5rem 1.25rem; }
     .contact-inner {
