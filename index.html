@@ -97,13 +97,13 @@
   <div class="about-inner">
     <div class="about-text">
       <p class="reveal">
-        I'm <strong>Faith Akinyi</strong>, a self-taught full-stack developer who graduated with a Maths and CS degree and immediately dove into building. No internships, no corporate experience — just <strong>real projects</strong>, late nights, and a stubborn habit of actually finishing things.
+        I'm <strong>Faith Akinyi</strong>, a full-stack developer who graduated with a Maths and CS degree and immediately dove into building. No internships, no corporate experience — just <strong>real projects</strong>, late nights, and a stubborn habit of actually finishing things.
       </p>
       <p class="reveal">
         I love the full product loop: designing the data model, building the API, wiring up the UI, deploying the whole thing. I'm comfortable jumping between <strong>React and Node</strong>, debugging a PostgreSQL query at 2am, and caring about whether the button radius is right.
       </p>
       <p class="reveal">
-        Currently looking for a first role where I can go deep, move fast, and keep building things that actually ship.
+        Currently looking for a role where I can go deep, move fast, and keep building things that actually ship.
       </p>
     </div>
 
@@ -195,34 +195,34 @@
   <div class="featured-project reveal" style="grid-template-columns: 1fr 1fr;">
     <div class="fp-content" style="order:1;">
       <div class="fp-number">02 / featured</div>
-      <h3 class="fp-title">Twice Blessed — E-commerce Application</h3>
-      <p class="fp-desc"><b>The problem:</b> Most second-hand and small-scale online shops in Kenya rely entirely on Instagram DMs or WhatsApp to sell — there's no cart, no order tracking, no admin dashboard. I wanted to build a proper storefront that any small business could actually use.</p>
-      <p><b>What I built:</b> Twice Blessed is a full-stack e-commerce platform with three distinct layers: a customer-facing storefront, an admin dashboard for managing products and orders, and a Node.js/Express backend API.</p>
-      <p><b>Key technical decisions:</b> I separated the app into three folders (admin, client, server) from the start to keep concerns cleanly separated and make the codebase easier to scale. Tailwind CSS kept the UI consistent across both the storefront and admin panel without writing custom CSS for every component.</p>
-      <p><b>What I learned:</b> Building for two different user types (customer vs admin) in the same app taught me to think carefully about role-based access — what each user should and shouldn't be able to see or do, and how to enforce that both on the frontend and the API.</p>
+      <h3 class="fp-title">MPESA B2C Bulk Payments System</h3>
+      <p class="fp-desc"><b>The problem:</b> Businesses running bulk M-Pesa payments — salaries, supplier payouts, agent disbursements — often rely on manual processes or expensive ERP integrations. There was no simple, standalone tool for finance teams to upload a spreadsheet and push payments directly.</p>
+      <p><b>What I built:</b> A secure web portal where authorized users upload an Excel file of payment recipients, the system validates the data, and triggers real M-Pesa B2C transactions via the Safaricom Daraja API — with real-time status tracking and a reconciliation report at the end.</p>
+      <p><b>Key technical decisions:</b> Sensitive data (API credentials, phone numbers) is encrypted at the database level, not just in transit. Role-based access ensures only authorized users can initiate payments. The Excel validation layer catches formatting errors and duplicate entries before any transaction is fired.</p>
+      <p><b>What I learned:</b> Working directly with a financial API like Daraja taught me that error handling and reconciliation matter more than the happy path — a failed transaction needs a clear paper trail, not just a generic error message.</p>
 
       <div class="fp-tags">
         <span class="tag">React</span>
         <span class="tag blue">Tailwind</span>
         <span class="tag blue">Express.js</span>
         <span class="tag blue">Node.js</span>
-        <span class="tag orange">Netlify</span>
+        <span class="tag orange">Vercel</span>
       </div>
       <div class="fp-links">
-        <a href="https://github.com/faith-53/Blessed" class="fp-link">GitHub <span class="arrow">↗</span></a>
-        <a href="https://inquisitive-taffy-c78793.netlify.app/" class="fp-link">Live demo <span class="arrow">↗</span></a>
+        <a href="https://github.com/faith-53/MPESA-B2C" class="fp-link">GitHub <span class="arrow">↗</span></a>
+        <a href="https://fintech-ten-gold.vercel.app" class="fp-link">Live demo <span class="arrow">↗</span></a>
       </div>
     </div>
     <div class="fp-visual" style="order:2;border-right:none;border-left:1px solid var(--border);">
       <div class="mockup">
         <div class="line-muted">// Handle review edit</div>
         <br>
-        <div><span class="line-blue">const handleEdit</span>=<span class="line-green">(r)</span>(<span class="line-orange">=></span>{</div>
-        <div>&nbsp;&nbsp;<span class="line-blue">setEditMode</span>(true)<span class="line-green">;</span></div>
-        <div>&nbsp;&nbsp;<span class="line-blue">setEditReviewId</span>(r._id)<span class="line-green">;</span></div>
-        <div>&nbsp;&nbsp;<span class="line-blue">setRating</span>(r.rating)<span class="line-green">;</span></div>
-        <div>&nbsp;&nbsp;<span class="line-blue">setReview</span>(r.review)<span class="line-green">;</span></div>
-        <div>};</div>
+        <div><span class="line-blue">const data</span>=<span class="line-green">res?.data</span>||<span class="line-orange">res</span>;</div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setBatch</span>(data.batch)<span class="line-green">;</span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setPayments</span>(data.payments || [])<span class="line-green">;</span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue">setValidationErrors</span>(data.validationErrors<span class="line-green"></span></div>
+        <div>&nbsp;&nbsp;<span class="line-blue"></span>||<span class="line-green">[])</span></div>
+        <div>;</div>
         <br>
         <div class="line-muted">// 3 users connected · room #a7f2</div>
         <br>
@@ -265,12 +265,12 @@
     </div>
 
     <div class="project-card">
-      <div class="pc-icon green">🎬</div>
-      <div class="pc-title">OnlineVideoBot</div>
-      <p class="pc-desc">A lightweight bot that fetches online videos from YouTube, Vimeo, Instagram, and 1000+ other sites, saving them locally as **MP4** files. Ready to watch or archive.</p>
+      <div class="pc-icon green">♾️</div>
+      <div class="pc-title">CI/CD Pipeline with Kubernetes</div>
+      <p class="pc-desc">This project demonstrates a complete DevOps workflow: Dockerized Node.js app , CI/CD pipeline using GitHub Actions, and Kubernetes deployment</p>
       <div class="pc-footer">
-        <div class="pc-stack">Python · yt-dlp </div>
-        <a href="https://github.com/faith-53/Videos-Dowloader" class="pc-link">↗</a>
+        <div class="pc-stack">JavaScript · Docker · Github Actions </div>
+        <a href="https://github.com/faith-53/CI-CD-Pipeline-with-Kubernetes" class="pc-link">↗</a>
       </div>
     </div>
 
@@ -286,11 +286,11 @@
 
     <div class="project-card">
       <div class="pc-icon orange">📝</div>
-      <div class="pc-title">Text Editor</div>
-      <p class="pc-desc">StackPad is a modern text editor that combines simplicity with powerful features. It offers a tabbed interface, file explorer sidebar, syntax highlighting support, and session management - all in a lightweight package that runs smoothly on any system.</p>
+      <div class="pc-title">Twice Blessed — E-commerce Application</div>
+      <p class="pc-desc">Twice Blessed is a full-stack e-commerce platform with three distinct layers: a customer-facing storefront, an admin dashboard for managing products and orders, and a Node.js/Express backend API.</p>
       <div class="pc-footer">
         <div class="pc-stack">Python · tkinter · JSON</div>
-        <a href="https://github.com/faith-53/StackPad" class="pc-link">↗</a>
+        <a href="https://inquisitive-taffy-c78793.netlify.app" class="pc-link">↗</a>
       </div>
     </div>
 
@@ -336,11 +336,11 @@
         </div>
         <span class="cl-arrow">→</span>
       </a>
-      <a href="https://www.linkedin.com/in/faith-akinyi-5ab818350/" class="contact-link">
+      <a href="https://www.linkedin.com/in/faith-akinyi-5ab818350" class="contact-link">
         <div class="cl-icon">💼</div>
         <div>
           <div class="cl-label">LinkedIn</div>
-          <div class="cl-value">https://www.linkedin.com/in/faith-akinyi-5ab818350/</div>
+          <div class="cl-value">https://www.linkedin.com/in/faith-akinyi-5ab818350</div>
         </div>
         <span class="cl-arrow">→</span>
       </a>
